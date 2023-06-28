@@ -21,3 +21,4 @@ def get_miles(total_purchases, type="d"):
     else:
         miles_earned = total_purchases
         print(f"You have {miles_earned} miles via other purchases") 
+
