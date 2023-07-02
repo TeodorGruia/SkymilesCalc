@@ -1,9 +1,13 @@
-"""Skymiles calculator to fing out how many points you'll earn for specific purchases"
-    Sam Goldberg
 """
+Program name: Skymiles Calculator
+Date of first writing: 6/25/2023
+Author: Sam Goldberg
+"""
+
+
 import functions
 def main():
-    p, t = functions.menu() #P is the dollar amount, t is the type of purchase
+    p, t = functions.menu() # P is the dollar amount, t is the type of purchase
     res = functions.get_miles(float(p), t)
     print(res)
     cont()

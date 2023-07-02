@@ -1,3 +1,9 @@
+"""
+Library/Module name: functions
+
+Author: Sam Goldberg
+"""
+
 def menu():
     print("--Delta Skymiles Calculator--")
     print("How much was your total purchase?")
@@ -12,6 +18,16 @@ def menu():
 
 
 def get_miles(total_purchases, type="d"):
+    """Asks the user for the amount of the purchase
+    Then calculated the skymiles balances based off the amount 
+    of the purchase
+
+    Args:
+        total_purchases (float): How much did the user spend?
+        type (str, optional): What type of purchase? . Defaults to "d".
+        d or h - Delta purchases (flights, inflight meals, etc) or hotels via direct purchase
+        r or s - Resturants or groceries (Not club stores)
+    """
     if type == "d" or type == "h":
         miles_earned = total_purchases * 3
         print(f"You have {miles_earned} miles via Hotels or Delta purchases")
